@@ -60,7 +60,6 @@ class _ProductListViewState extends State<ProductListView> {
                                 productController.productList[index].price),
                           ),
                           const Divider(),
-                          AppWidget.containerWidget(),
                         ],
                       );
                     }),

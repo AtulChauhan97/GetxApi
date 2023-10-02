@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getxapi/api_module/api_services.dart';
+import 'package:getxapi/app_widget_module/widget_module.dart';
 import 'package:getxapi/common_module/app_color.dart';
 import 'package:getxapi/common_module/app_string.dart';
 import 'package:getxapi/product_module/controller/product_controller.dart';
@@ -58,7 +59,8 @@ class _ProductListViewState extends State<ProductListView> {
                             trailing: Text(
                                 productController.productList[index].price),
                           ),
-                          const Divider()
+                          const Divider(),
+                          AppWidget.containerWidget(),
                         ],
                       );
                     }),

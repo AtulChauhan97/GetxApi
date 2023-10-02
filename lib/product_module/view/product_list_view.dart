@@ -43,6 +43,7 @@ class _ProductListViewState extends State<ProductListView> {
                           ListTile(
                             title:
                                 Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(productController.productList[index].name),
                                     Text(productController.productList[index].brand),
